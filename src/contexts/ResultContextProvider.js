@@ -1,7 +1,7 @@
 import React, { createContext,useContext,useState } from "react";
 import axios from "axios";
 const ResultContext=createContext();
-//const baseUrl='https://google-search72.p.rapidapi.com';
+const baseUrl='https://google-search72.p.rapidapi.com';
 export const ResultContextProvider=({children})=>{
     const[results,setResults]=useState([]);
     const[isLoading,setIsLoading]=useState(false);
